@@ -20,8 +20,13 @@
     <h1>Hello World!</h1>
     <p>I was set free from the curse!!</p>
     <script>
-        var nome = window.prompt('Qual é seu nome?'); //pergunta o nome...
-        window.alert('É um grande prazer te conhecer, '+ nome + '!') //concatenação
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 +n2
+        window.alert(`A soma de ${n1} + ${n2} é igual a ${s}`) //concatenação
+        //OU window.alert('A soma dos valores é ' + String(s))
+        //(number + number) para adição
+        //(string + string) para concatenação
     </script>
 </body>
 </html>
