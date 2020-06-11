@@ -9,3 +9,17 @@ n=n%5  n%=5
 
 n+1  n++
 n-1  n--
+
+
+Precedência (sequência )
+
+Início
+
+(),**,/,*,%,+,- //operadores artiméticos
+>,<,>=,<=,==,!= // operadores relacionais
+! // operador lógico
+&& // operador lógico
+|| // operador lógico
+?: // operador ternário
+
+Fim
