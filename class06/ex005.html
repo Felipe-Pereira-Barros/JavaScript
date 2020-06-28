@@ -16,11 +16,11 @@
 <body>
     <h1 id="id">Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar <strong> DOM </strong> em .JS</p>
-    <div >Clique em mim</div>
+    <p class="22">Aprendendo a usar <strong> DOM </strong> em .JS</p>
+    <div name="11">Clique em mim</div>
     <script>
         /*MARCA*/
-        var p1 = window.document.getElementsByTagName('p ')[0]
+        var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write(p1.innerText)
         
 
@@ -28,12 +28,16 @@
         var p2 = window.document.getElementById('id')
         document.write(p2.innerHTML)
         //NOME
-        var p3 = window.document.getElementsByName()
+        var p3 = window.document.getElementsByName('div')
+        document.write(p3.innerHTML)
 
         //Classe
-
+        var p4 = window.document.getElementsByClassName('22')
+        document.write(p4.innerHTML)
         // Seletor
 
+        var p5 = window.document.querySelector('color')
+        document.write(p5.innerHTML)
     </script>
 </body>
 </html>
