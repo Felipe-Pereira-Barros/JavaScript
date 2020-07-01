@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+        body{
+            background: chocolate;
+            color: cornsilk;
+        }
+        h1{
+            color: crimson;
+        }
+    </STYle>
+</head>
+<body>
+    <h1>Análise de Nacionalidade</h1>
+    Qual seu país? <input type="text" id="txt">
+    <input type="button" value="verificar" onclick="atuar()">
+    <div id="res"></div>
+
+    <script>
+        function atuar(){
+        txt = String(document.querySelector('input#txt').value)
+        res = document.querySelector('div#res')
+
+        res.innerHTML = `<p>Seu país é <strong>${txt}</strong><p>`
+            if(txt.toUpperCase() == 'BRASIL'){
+                res.innerHTML += `Você é <strong>brasileiro</strong>`
+            }else{
+                res.innerHTML += `Você é <strong> estrangeiro </strong>`
+            }
+        }
+    </script>
+</body>
+</html>

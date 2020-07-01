@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Exercício</title>
+    <style>
+        body{
+            background: coral;
+            color: cyan;
+        }
+        h1{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulta de Nacionalidade</h1>
+    Qual seu país?  <input type="text" name="text" id="text">
+    <input type="button" value="verificar" onclick="analise()">
+    <div id="res"></div>
+
+    <script>
+        function analise(){
+            txt = String(document.querySelector('input#text').value)
+            res = document.querySelector('div#res')
+
+            res.innerHTML = `<p> Seu país é ${txt}<p>`
+            if(txt.toUpperCase() == 'BRASIL'){
+               res.innerHTML += `<p> Você é <strong> Brasileiro </strong><p>` 
+            }else{
+                res.innerHTML += `<p>Você é <strong> estrangeiro </strong><p>`
+            }
+        }
+    </script>
+</body>
+</html>
