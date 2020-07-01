@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Sistema de Nacionalidade</title>
+    <STYLE>
+        body{
+            background: cadetblue;
+            color: rgb(252, 214, 2)
+        }
+        h1{
+            color: cyan;
+        }
+    </STYLE>
+</head>
+<body>
+    <h1> Consulta de Nacionalidae</h1>
+    Qual seu país? <input type="text" name="txtvel" id="txtvel"> 
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = String(txtv.value)
+            res.innerHTML = `<p>Seu país é <strong>${vel}</strong> <p>`
+            if (vel.toUpperCase() == 'BRASIL'){
+                res.innerHTML+=`Você é <strong>brasileiro</strong>`
+            }else{
+            res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
